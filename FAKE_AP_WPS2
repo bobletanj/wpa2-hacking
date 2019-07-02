@@ -5,9 +5,22 @@
 #Verify that you have a running internet connection on the net_card before running the script
 
 #Networking cards setting
-ap_card=wlp2s0
-net_card=enp0s26u1u2
 
+
+
+if [ $# -eq 0 ]
+then
+	net_card=enp0s26u1u2
+	ap_card=wlp2s0
+	
+elif [ $# -eq 2 ]
+then
+	net_card=$1
+	ap_card=$2
+else
+	echo "usage : $0 NETCARD APCARD" >&2
+	exit 1
+fi 
 ctrl_interface=/var/run/hostapd
 ctrl_interface_group=0
 
